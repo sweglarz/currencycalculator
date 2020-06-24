@@ -1,0 +1,22 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.wrapper{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.wrapper__header{
+    text-align: center;
+    display: block;
+}

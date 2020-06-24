@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <script defer src="js/javascript.js"></script>
+    <title>Currency Calculator</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1 class="wrapper__header">Internetowy kantor wymiany walut</h1>
+        <form class="form js-form">
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">
+                    Kalkulator walut
+                </legend>
+                <span class="form__span--required">Pola oznaczone symbolem * są wymagane</span>
+                <p class="form__paragraph">
+                    <label class="form__label">
+                        <span class="form__span">Kwota w zł*</span>
+                        <input class="form__input js-amount" name="js-amount" required type="number" min="1" step="0.1"
+                            placeholder="Wprowadź kwotę" value="1">
+                    </label>
+                </p>
+                <p class="form__paragraph">
+                    <label class="form__label">
+                        <span class="form__span">Przelicz na:</span>
+                        <select name="js-optionTo" class="form__select js-optionTo">
+                            <option value="USD">USD Dolar Amerykański</option>
+                            <option value="EUR">EUR Euro</>
+                            <option value="CHF">CHF Frank Szwajcarski</option>
+                            <option value="GBP">GBP Funt Szterling</option>
+                        </select>
+                    </label>
+                </p>
+                <button class="form__button">Przelicz</button>
+                <p class="form_paragraph">Przeliczona kwota: <strong class="form__strong js-strong">N/A</strong></p>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
