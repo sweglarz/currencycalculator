@@ -7,16 +7,22 @@ html {
     box-sizing: inherit;
 }
 
-body{
+.body{
     font-family: 'Source Sans Pro', sans-serif;
+    background-image: url("../img/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10px;
 }
 
 .wrapper{
     max-width: 600px;
-    margin: 0 auto;
+    margin: auto;
 }
 
 .wrapper__header{
     text-align: center;
     display: block;
+    color: #fff;
+    text-shadow: 2px 2px 5px #000;
 }
